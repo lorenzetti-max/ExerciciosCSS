@@ -1,0 +1,139 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 CSS</title>
+    <link rel="stylesheet" type="text/css" href="Style/style11.css"> </head>
+<body>
+    <header>
+        <div class="menu_top">
+            <div class="top_esp">
+                <figure>
+                    <img src="img/logo lorem.jpg"  alt="logo" height="140px"> </figure>
+            </div>
+            <div class="top_dir">
+                 PETSHOP YOUNG PHOENIX
+            </div>
+            <div class="clear"></div> </div>
+        <nav>
+            <span class="menu"><a href="">HOME</a></span>
+            <span class="menu"><a href="">RAÇÃO</a></span>
+            <span class="menu"><a href="">BRINQUEDOS</a></span>
+            <span class="menu"><a href="">ROUPAS</a></span>
+            <span class="menu"><a href="">BANHO E TOSA</a></span>
+        </nav>
+    </header>
+    <main>
+        <div class="meio">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti sit necessitatibus voluptates consequuntur aliquam. Perferendis culpa eaque aliquid nulla excepturi, impedit, ipsa non voluptate, fugit voluptatum eius? Minus, quod soluta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quisquam repellendus sit libero quod atque fugit in vitae quaerat natus saepe culpa iusto voluptatibus, error, unde eveniet sint. Maxime, dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore omnis quia ex ipsa sequi modi aliquid, earum quas nobis quis exercitationem magnam libero consequatur optio rem? Molestiae perferendis fugiat quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod porro aliquid! Dolore voluptate culpa suscipit ut deleniti rerum necessitatibus quidem eum reiciendis! Facere, sequi ipsum repellat quisquam obcaecati incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure vero odio eligendi delectus est tempore, quaerat recusandae et possimus dicta ducimus atque tenetur sunt exercitationem deleniti quis eos vel Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa recusandae odit distinctio mollitia quam, possimus ratione tenetur adipisci et praesentium odio! Sed, commodi beatae? Minus nisi excepturi vitae eligendi.
+   
+           
+            </p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
+
+<style>
+
+
+
+   
+/* Estilos para o corpo da página */
+body {
+    margin: 0;             /* Remove a margem padrão do corpo */
+    padding: 0;            /* Remove o preenchimento padrão do corpo */
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+    position: fixed;      /* Fixa o cabeçalho no topo da janela de visualização */
+    top: 0;               /* Posiciona o cabeçalho no topo */
+    left: 0;              /* Posiciona o cabeçalho à esquerda */
+    width: 100%;          /* Ocupa a largura total da janela */
+    height: 170px;         /* Define a altura do cabeçalho */
+    border-bottom: 70px solid #36c8f0; /* Borda inferior azul */
+    border-top: 10px solid #36c8f0;    /* Borda superior azul */
+    background-color: white; /* Cor de fundo branca */
+    text-align: center;
+}
+
+/* Estilos para o menu */
+.menu {
+    position: relative;   /* Posicionamento relativo para o menu */
+    top: 15px;            /* Posiciona o menu 15px abaixo do topo do cabeçalho */
+    /* border-right: solid 2px #ef5a2c;  */ /* Borda direita laranja (removida ou incorreta na imagem) */
+    padding: 10px;         /* Preenchimento interno do menu */
+    background-color: #36cbf0;
+ 
+}
+
+/* Estilos para o elemento clear (clearfix) */
+.clear {
+    clear: both;          /* Limpa elementos flutuantes */
+}
+
+/* Estilos para o elemento top_esp */
+.top_esp {
+    width: 140px;        /* Define a largura do elemento */
+    float: left;          /* Flutua o elemento à esquerda */
+    padding: 10px;         /* Preenchimento interno do elemento */
+}
+
+/* Estilos para o elemento top_dir */
+.top_dir {
+    float: left;          /* Flutua o elemento à esquerda */
+    text-align: center;    /* Alinha o texto ao centro */
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Define a fonte */
+    font-size: 100px;     /* Define o tamanho da fonte */
+    color: #ef5a2c;      /* Define a cor do texto para laranja */
+    padding-left: 35px;  /* Preenchimento à esquerda */
+    padding-top: 20px;    /* Preenchimento no topo */
+}
+
+/* Estilos para o elemento menu_top */
+.menu_top {
+    width: 100%;
+    height: 170px;
+    border-bottom: 3px solid #dfb320;
+    border-top: 10px solid #36c8f0;
+    background-color: white;
+}
+
+/* Estilos para o elemento menu_down */
+.menu_down {
+    background: #36c8f0;  /* Cor de fundo azul */
+    height: 50px;          /* Define a altura do elemento */
+    text-align: center;    /* Alinha o texto ao centro */
+}
+
+
+/* Estilos para o conteúdo principal (main) */
+main {
+    margin-top: 260px;    /* Margem superior para posicionar o conteúdo abaixo do cabeçalho fixo */
+    padding: 20px;
+}
+
+/* Estilos para parágrafos dentro do main */
+main p {
+    text-align: justify;  /* Justifica o texto */
+    line-height: 1.5em;    /* Define a altura da linha para melhorar a legibilidade */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* Define a fonte */
+}
+
+/* Estilos para links */
+a {
+    text-decoration: none; /* Remove a decoração de texto padrão (sublinhado) */
+}
+
+/* Estilos para links no hover */
+a:hover {
+    color: #ef5a2c;      /* Altera a cor do texto do link ao passar o mouse */
+
+}
+</style>

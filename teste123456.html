@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocalateria São Matheus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ef5a2c;
+        }
+
+        /* Cabeçalho fixo */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 170px;
+            border-bottom: 70px solid #d6cba1;
+            border-top: 40px solid  #2b1d0e;
+            background-color: white;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: #d6cba1;
+        }
+
+        .top-bar h1 {
+            font-size: 28px;
+            font-family: Georgia, serif;
+            color: #2b1d0e;
+            margin: 0;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            padding: 5px;
+            width: 150px;
+        }
+
+        .search-box button {
+            padding: 5px 10px;
+            background-color: #654321;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        nav.menu {
+            background-color: #3a2615;
+        }
+
+        nav.menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav.menu li {
+            margin: 0;
+        }
+
+        nav.menu a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-right: 1px solid #654321;
+        }
+
+        nav.menu a:hover {
+            background-color: #5a3e2b;
+        }
+
+        main {
+            margin-top: 260px;
+            padding: 20px;
+        }
+
+        main p {
+            text-align: justify;
+            line-height: 1.5em;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        }
+
+        .especial {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+
+        .especial h2 {
+            font-size: 48px;
+            color: #000;
+        }
+
+        .box1, .box2, .box3, .box4 {
+            position: relative;
+            height: 100vh;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .box1 { background-image: url(img/bAP.gif); }
+        .box2 { background-image: url(img/foto02.jpg); }
+        .box3 { background-image: url(img/foto03.jpg); }
+        .box4 { background-image: url(img/foto04.jpg); }
+
+        .cont-img {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cont-img span.titulo {
+            background-color: rgb(13, 66, 13);
+            color: #ffffff;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-family: 'Finger Paint', cursive;
+        }
+
+        .conteudo {
+            background-color: #e3e8dd;
+            color: rgb(13, 66, 13);
+            text-align: justify;
+            padding: 50px 100px 40px 100px;
+            background-image: url(img/mold01.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            color: rgb(13, 66, 13);
+            text-align: center;
+        }
+
+        .roda {
+            height: 330px;
+            background-color: #e3e8dd;
+        }
+
+        .roda .down_up {
+            text-align: center;
+            color: rgb(13, 66, 13);
+            font-family: 'Finger Paint', cursive;
+            font-size: 4em;
+        }
+
+        .roda .down_meio {
+            text-align: center;
+            color: rgb(13, 66, 13);
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+        }
+
+        .roda .down_down {
+            text-align: center;
+        }
+
+        .roda .down_down img {
+            width: 40px;
+            border-radius: 25px;
+            border: 4px rgb(13, 66, 13) dotted;
+            cursor: pointer;
+            margin: 20px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <img src="img/chocolate.jpg" alt="Logo" class="logo">
+        <h1>CHOCALATERIA SÃO MATHEUS</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Pesquisar...">
+            <button>OK</button>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="img/whats_logo_01.png" alt="WhatsApp"></a>
+            <a href="#"><img src="img/fece1234" alt="Facebook"></a>
+            <a href="#"><img src="img/inst_logo_01.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">HOME &nabla;</a></li>
+            <li><a href="#">DOCES
