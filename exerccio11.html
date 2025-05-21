@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colaboradores</title>
+    <style>
+        /* Estilos para o corpo da página */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Define uma fonte padrão */
+        }
+
+        /* Estilos para o título da seção */
+        .titulo {
+            background-color: rebeccapurple; /* Cor de fundo roxo */
+            text-transform: uppercase; /* Texto em maiúsculas */
+            text-align: center; /* Alinhamento central do texto */
+            padding: 30px; /* Preenchimento interno */
+            color: white; /* Cor do texto branco */
+        }
+
+        /* Estilos para o contêiner de conteúdo */
+        .conteudo {
+            /* Gradiente de fundo com cores roxo, azul aço e turquesa */
+            background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+            display: flex; /* Usa flexbox para o layout dos itens */
+            flex-direction: row; /* Itens em linha */
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            justify-content: space-around; /* Distribui os itens uniformemente com espaço entre eles */
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            padding: 20px; /* Preenchimento interno */
+            min-height: 500px; /* Altura mínima para o gradiente ser visível */
+        }
+
+        /* Estilos para cada item (caixa de colaborador) */
+        .item {
+            width: 20%; /* Largura de cada item */
+            height: 200px; /* Altura de cada item */
+            margin: 10px; /* Margem ao redor de cada item */
+            background: rgb(244, 241, 241); /* Cor de fundo padrão (branco quase) */
+            flex-grow: 0; /* Não permite que o item cresça para preencher espaço extra */
+            flex-shrink: 1; /* Permite que o item encolha se necessário */
+            border-radius: 10px; /* Cantos arredondados */
+            background-size: 90%; /* Tamanho da imagem de fundo */
+            background-repeat: no-repeat; /* Não repete a imagem de fundo */
+            background-position: center; /* Posição central da imagem de fundo */
+            background-color: white; /* Cor de fundo branca para o item */
+            transition: all 0.3s ease; /* Transição suave para efeitos de hover */
+        }
+
+        /* Efeito de hover para os itens */
+        .item:hover {
+            width: 30%; /* Aumenta a largura ao passar o mouse */
+            height: 300px; /* Aumenta a altura ao passar o mouse */
+            margin: 0; /* Remove a margem ao passar o mouse para um efeito de "zoom" */
+            padding: 0; /* Remove o padding ao passar o mouse */
+        }
+
+        /* Imagens de fundo para itens específicos */
+        .itemA {
+            background-image: url(Imagem/face01.png); /* Imagem para itemA */
+        }
+
+        .itemB {
+            background-image: url(Imagem/face02.png); /* Imagem para itemB */
+        }
+
+        .itemC {
+            background-image: url(Imagem/face03.png); /* Imagem para itemC */
+        }
+
+        .itemO { /* Corrigido de itemo para itemO conforme o HTML */
+            background-image: url(Imagem/face04.png); /* Imagem para itemO */
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            .item {
+                width: 45%; /* Largura maior em telas menores */
+                height: 180px;
+            }
+            .item:hover {
+                width: 50%;
+                height: 220px;
+            }
+            .titulo h1 {
+                font-size: 1.5em; /* Reduz o tamanho do título em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .item {
+                width: 90%; /* Ocupa quase toda a largura em telas muito pequenas */
+                height: 150px;
+            }
+            .item:hover {
+                width: 95%;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Colaboradores</h1>
+    </div>
+    <div class="conteudo">
+        <div class="item itemA"></div>
+        <div class="item itemB"></div>
+        <div class="item itemC"></div>
+        <div class="item itemO"></div>
+        <div class="item itemA"></div>
+        <div class="item itemB"></div>
+        <div class="item itemC"></div>
+        <div class="item itemO"></div>
+        <div class="item itemA"></div>
+        <div class="item itemB"></div>
+        <div class="item itemC"></div>
+        <div class="item itemO"></div>
+    </div>
+</body>
+</html>
